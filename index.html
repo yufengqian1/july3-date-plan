@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="July 3 date plan: brunch, archery, Otto Strada, then choose the night vibe." />
+  <title>July 3 Date Plan</title>
+  <style>
+    :root {
+      --bg: #fff7ef;
+      --ink: #241916;
+      --muted: #7b6b63;
+      --line: #ecddd0;
+      --card: rgba(255,255,255,.9);
+      --accent: #c66b4e;
+      --green: #2f6f73;
+      --lav: #6d5f8f;
+      --gold: #d69a43;
+      --soft: #fff1df;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+      background:
+        radial-gradient(circle at 12% 0%, #ffe0bb 0 13%, transparent 24%),
+        radial-gradient(circle at 102% 8%, #cbe8e3 0 12%, transparent 22%),
+        linear-gradient(180deg, #fff8ef 0%, #f7ebe3 100%);
+      color: var(--ink);
+    }
+    .phone {
+      max-width: 430px;
+      margin: 0 auto;
+      min-height: 100vh;
+      padding: 16px 15px 34px;
+    }
+    .hero {
+      min-height: 280px;
+      border-radius: 31px;
+      overflow: hidden;
+      position: relative;
+      color: white;
+      background:
+        linear-gradient(170deg, rgba(31,21,18,.65), rgba(198,107,78,.16)),
+        url("assets/hero.svg") center/cover;
+      box-shadow: 0 18px 50px rgba(66, 38, 24, .24);
+    }
+    .hero::after {
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(180deg, rgba(0,0,0,.03) 0%, rgba(0,0,0,.62) 100%);
+    }
+    .hero-content {
+      position:absolute;
+      inset:0;
+      z-index:1;
+      padding:22px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+    .pill {
+      width:fit-content;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.18);
+      border:1px solid rgba(255,255,255,.23);
+      backdrop-filter: blur(8px);
+      font-size:13px;
+      font-weight:800;
+    }
+    h1 {
+      margin:0 0 9px;
+      font-size:38px;
+      line-height:.96;
+      letter-spacing:-1.4px;
+    }
+    .subtitle {
+      font-size:15px;
+      line-height:1.42;
+      opacity:.94;
+      max-width:345px;
+    }
+    .weather {
+      margin:14px 2px 0;
+      padding:14px 15px;
+      border-radius:21px;
+      background: #2f6f73;
+      color:white;
+      font-size:14px;
+      line-height:1.38;
+      box-shadow:0 10px 26px rgba(47,111,115,.22);
+    }
+    .section-title {
+      margin:24px 4px 12px;
+      display:flex;
+      justify-content:space-between;
+      align-items:end;
+    }
+    .section-title h2 {
+      margin:0;
+      font-size:21px;
+      letter-spacing:-.35px;
+    }
+    .section-title span {
+      font-size:13px;
+      color:var(--muted);
+    }
+    .card {
+      background:var(--card);
+      border:1px solid rgba(236,221,208,.9);
+      border-radius:24px;
+      padding:12px;
+      margin-bottom:12px;
+      box-shadow:0 11px 30px rgba(84,51,31,.07);
+      backdrop-filter:blur(10px);
+    }
+    .row {
+      display:grid;
+      grid-template-columns:86px 1fr;
+      gap:13px;
+      align-items:center;
+    }
+    .thumb {
+      width:86px;
+      height:86px;
+      border-radius:19px;
+      overflow:hidden;
+      background:linear-gradient(135deg,#f2d1a2,#ca7654);
+      position:relative;
+      flex-shrink: 0;
+    }
+    .thumb img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .time {
+      font-size:13px;
+      color:var(--accent);
+      font-weight:850;
+      margin-bottom:5px;
+    }
+    h3 {
+      margin:0 0 5px;
+      font-size:17px;
+      letter-spacing:-.2px;
+    }
+    p {
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.35;
+    }
+    .tags {
+      margin-top:10px;
+      display:flex;
+      gap:6px;
+      flex-wrap:wrap;
+    }
+    .tag {
+      font-size:12px;
+      padding:5px 8px;
+      border-radius:999px;
+      background:#f5ece6;
+      color:#6d5045;
+      font-weight:750;
+    }
+    .option {
+      padding:0;
+      overflow:hidden;
+      position:relative;
+    }
+    .option-top {
+      height:120px;
+      position:relative;
+      overflow:hidden;
+      background:#ddd;
+    }
+    .option-top img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .option-top::after {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,.45));
+    }
+    .option-letter {
+      position:absolute;
+      top:12px;
+      left:12px;
+      z-index:2;
+      width:34px;
+      height:34px;
+      border-radius:999px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:rgba(255,255,255,.92);
+      color:var(--ink);
+      font-weight:900;
+      box-shadow:0 8px 20px rgba(0,0,0,.16);
+    }
+    .option-body { padding:14px; }
+    .option-body h3 { font-size:18px; }
+    .best {
+      margin-top:9px;
+      padding:10px 11px;
+      border-radius:16px;
+      background:#fff4ea;
+      color:#6a4c42;
+      font-size:13px;
+      line-height:1.35;
+      border:1px solid #efdcca;
+    }
+    .select-btn {
+      margin-top:12px;
+      padding:12px 13px;
+      border-radius:16px;
+      text-align:center;
+      color:white;
+      font-size:14px;
+      font-weight:850;
+      background:#241916;
+    }
+    .a .select-btn { background:var(--lav); }
+    .b .select-btn { background:var(--green); }
+    .c .select-btn { background:var(--gold); color:#251916; }
+    .logistics {
+      padding:15px;
+      border-radius:22px;
+      background:#fffdf8;
+      border:1px dashed #e6cdb7;
+      margin-bottom:12px;
+    }
+    .logistics ul {
+      margin:8px 0 0;
+      padding-left:18px;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.45;
+    }
+    .message {
+      background:#241916;
+      color:white;
+      padding:16px;
+      border-radius:22px;
+      font-size:14px;
+      line-height:1.43;
+      box-shadow:0 12px 30px rgba(36,25,22,.18);
+    }
+    .copy {
+      margin-top:11px;
+      padding:13px;
+      border-radius:17px;
+      background:var(--soft);
+      color:#6b4d42;
+      text-align:center;
+      font-weight:850;
+      font-size:14px;
+      border:1px solid #ead8c7;
+      cursor: pointer;
+      user-select: none;
+    }
+    .copy:active { transform: translateY(1px); }
+    .note {
+      margin:12px 6px 0;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.35;
+    }
+  </style>
+</head>
+<body>
+  <main class="phone">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="pill">Fri · July 3 · 07302 → Hoboken</div>
+        <div>
+          <h1>Cozy, playful, not walk-heavy</h1>
+          <div class="subtitle">Cafe Alyce, archery, Otto Strada, then we pick the night vibe.</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="weather">
+      Weather update: mostly sunny, but spiritually raining because it’s going to be way too hot 😌 Indoor, cozy, low-walking plan.
+    </div>
+
+    <div class="section-title">
+      <h2>Main plan</h2>
+      <span>pretty set</span>
+    </div>
+
+    <section class="card">
+      <div class="row">
+        <div class="thumb">
+          <img alt="Brunch illustration" src="assets/cafe-alyce.svg">
+        </div>
+        <div>
+          <div class="time">11:30 AM</div>
+          <h3>Cafe Alyce brunch</h3>
+          <p>Start close to home with brunch / coffee energy. Light enough before Italian dinner.</p>
+          <div class="tags"><span class="tag">JC</span><span class="tag">brunch</span><span class="tag">easy start</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <div class="thumb">
+          <img alt="Archery target illustration" src="assets/archery.svg">
+        </div>
+        <div>
+          <div class="time">1:00 PM</div>
+          <h3>Archery in Jersey City</h3>
+          <p>Playful indoor activity. Not a long commitment, not just sitting, and not walking in the heat.</p>
+          <div class="tags"><span class="tag">indoor</span><span class="tag">playful</span><span class="tag">reservation?</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <div class="thumb">
+          <img alt="Coffee break illustration" src="assets/coffee.svg">
+        </div>
+        <div>
+          <div class="time">2:30–4:30 PM</div>
+          <h3>Flexible AC break</h3>
+          <p>Coffee, dessert, mall, or buy drinks/snacks. This is buffer, not dead time.</p>
+          <div class="tags"><span class="tag">AC</span><span class="tag">buffer</span><span class="tag">snacks</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <div class="thumb">
+          <img alt="Creamy pasta illustration" src="assets/otto-pasta.svg">
+        </div>
+        <div>
+          <div class="time">5:00 PM</div>
+          <h3>Otto Strada dinner</h3>
+          <p>Cozy Italian / creamy pasta vibe. Since it’s walk-in, we should arrive right at opening.</p>
+          <div class="tags"><span class="tag">Italian</span><span class="tag">Hoboken</span><span class="tag">walk-in</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-title">
+      <h2>Choose our night</h2>
+      <span>pick the vibe</span>
+    </div>
+
+    <section class="card option a">
+      <div class="option-top">
+        <img alt="Painting class illustration" src="assets/painting.svg">
+        <div class="option-letter">A</div>
+      </div>
+      <div class="option-body">
+        <div class="time">7:30–10:00 PM</div>
+        <h3>Painting Class</h3>
+        <p>ArteVino Hoboken. BYOB, cute, creative, more structured.</p>
+        <div class="best"><strong>Best if:</strong> we still feel artsy after dinner and want a take-home memory.</div>
+        <div class="tags"><span class="tag">artsy</span><span class="tag">BYOB</span><span class="tag">planned</span></div>
+        <div class="select-btn">Pick painting</div>
+      </div>
+    </section>
+
+    <section class="card option b">
+      <div class="option-top">
+        <img alt="Drive-in movie illustration" src="assets/drive-in.svg">
+        <div class="option-letter">B</div>
+      </div>
+      <div class="option-body">
+        <div class="time">9:30 PM</div>
+        <h3>Brooklyn Drive-In Movie</h3>
+        <p>Car movie, wings + Coke, late-night holiday weekend energy.</p>
+        <div class="best"><strong>Good thing:</strong> we can stretch our legs and don’t have to sit still forever like a regular theater.</div>
+        <div class="tags"><span class="tag">adventure</span><span class="tag">car date</span><span class="tag">wings + Coke</span></div>
+        <div class="select-btn">Pick drive-in</div>
+      </div>
+    </section>
+
+    <section class="card option c">
+      <div class="option-top">
+        <img alt="AMC movie night illustration" src="assets/amc.svg">
+        <div class="option-letter">C</div>
+      </div>
+      <div class="option-body">
+        <div class="time">After dinner</div>
+        <h3>AMC Movie Night</h3>
+        <p>Real movie, AC, less driving than Brooklyn, easier logistics.</p>
+        <div class="best"><strong>Best if:</strong> we want classic movie-date comfort without making the night too complicated.</div>
+        <div class="tags"><span class="tag">easy</span><span class="tag">AC</span><span class="tag">classic date</span></div>
+        <div class="select-btn">Pick AMC</div>
+      </div>
+    </section>
+
+    <div class="section-title">
+      <h2>Tiny logistics</h2>
+      <span>so it stays easy</span>
+    </div>
+    <div class="logistics">
+      <strong>Plan notes</strong>
+      <ul>
+        <li>Archery may need a reservation, especially early afternoon.</li>
+        <li>Otto Strada is walk-in, so 5:00 PM arrival is the move.</li>
+        <li>Evening stays flexible: artsy, adventure, or easy AC movie.</li>
+      </ul>
+    </div>
+
+    <div class="section-title">
+      <h2>Text to send</h2>
+      <span>copy/paste</span>
+    </div>
+    <div id="message" class="message">
+      Weather update: mostly sunny, but spiritually raining because it’s going to be way too hot 😌 I was thinking Cafe Alyce for brunch, archery in the afternoon, then Otto Strada for early Italian dinner. After that we can pick the night vibe: painting if we still feel artsy, Brooklyn drive-in if we want a little adventure and room to stretch, or AMC movie night if we want something easy and air-conditioned.
+    </div>
+    <div class="copy" onclick="copyMessage()">Copy this plan</div>
+    <div class="note">
+      Tiny static demo. Images are custom SVG placeholders so the page is self-contained and safe to publish.
+    </div>
+  </main>
+  <script>
+    async function copyMessage() {
+      const text = document.getElementById("message").innerText.trim();
+      try {
+        await navigator.clipboard.writeText(text);
+        document.querySelector(".copy").innerText = "Copied ✨";
+      } catch (e) {
+        document.querySelector(".copy").innerText = "Copy manually above";
+      }
+    }
+  </script>
+</body>
+</html>

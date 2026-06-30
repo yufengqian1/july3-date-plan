@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#6c5f8f"/>
+      <stop offset="1" stop-color="#d68a68"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <circle cx="120" cy="96" r="92" fill="#fff" opacity=".16"/>
+  <circle cx="780" cy="105" r="120" fill="#fff" opacity=".12"/>
+  <circle cx="760" cy="515" r="160" fill="#000" opacity=".06"/>
+  
+  <rect x="305" y="130" width="290" height="330" rx="18" fill="#fff8ee" filter="url(#shadow)"/>
+  <path d="M350 350 C390 240 455 424 526 280 C555 220 590 258 622 222" fill="none" stroke="#2f6f73" stroke-width="26" stroke-linecap="round"/>
+  <circle cx="380" cy="210" r="34" fill="#f2c66e"/>
+  <circle cx="520" cy="382" r="44" fill="#d86d53"/>
+  <rect x="255" y="480" width="390" height="28" rx="14" fill="#fff8ee" opacity=".9"/>
+
+  <text x="56" y="535" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="38" font-weight="800" fill="#fff" opacity=".92">painting</text>
+</svg>

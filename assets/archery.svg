@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#203c3f"/>
+      <stop offset="1" stop-color="#2f6f73"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <circle cx="120" cy="96" r="92" fill="#fff" opacity=".16"/>
+  <circle cx="780" cy="105" r="120" fill="#fff" opacity=".12"/>
+  <circle cx="760" cy="515" r="160" fill="#000" opacity=".06"/>
+  
+  <circle cx="450" cy="285" r="150" fill="#fff8ee"/>
+  <circle cx="450" cy="285" r="112" fill="#d86d53"/>
+  <circle cx="450" cy="285" r="76" fill="#fff8ee"/>
+  <circle cx="450" cy="285" r="42" fill="#2f6f73"/>
+  <circle cx="450" cy="285" r="14" fill="#f4c66d"/>
+  <path d="M215 190 L454 284" stroke="#1c1716" stroke-width="12" stroke-linecap="round"/>
+  <path d="M215 190 L285 180 L263 238" fill="#f4c66d"/>
+
+  <text x="56" y="535" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="38" font-weight="800" fill="#fff" opacity=".92">archery</text>
+</svg>

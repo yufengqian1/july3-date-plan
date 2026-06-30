@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#6b3b31"/>
+      <stop offset="1" stop-color="#d08b58"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <circle cx="120" cy="96" r="92" fill="#fff" opacity=".16"/>
+  <circle cx="780" cy="105" r="120" fill="#fff" opacity=".12"/>
+  <circle cx="760" cy="515" r="160" fill="#000" opacity=".06"/>
+  
+  <ellipse cx="450" cy="315" rx="230" ry="86" fill="#fff4df"/>
+  <ellipse cx="450" cy="300" rx="185" ry="60" fill="#f4d28a"/>
+  <path d="M300 292 C370 235 430 354 510 280 C575 224 630 333 685 286" fill="none" stroke="#fff8ee" stroke-width="22" stroke-linecap="round"/>
+  <path d="M325 330 C392 270 455 372 540 305 C596 260 633 335 672 310" fill="none" stroke="#fff2c4" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="345" cy="274" r="18" fill="#b83d2f"/>
+  <circle cx="610" cy="287" r="18" fill="#b83d2f"/>
+  <rect x="690" y="158" width="22" height="210" rx="11" fill="#e9dfd3" transform="rotate(22 701 263)"/>
+
+  <text x="56" y="535" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="38" font-weight="800" fill="#fff" opacity=".92">Otto Strada</text>
+</svg>
