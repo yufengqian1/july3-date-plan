@@ -15,3 +15,14 @@ A tiny static GitHub Pages date-plan page.
 2. Go to Settings → Pages.
 3. Choose: Deploy from a branch → main → /root.
 4. Open the Pages URL once GitHub finishes deploying.
+
+
+## Mascot animation
+
+The page includes a local lightweight mascot loop:
+
+- `assets/mascot-loop.webp` — primary animated asset
+- `assets/mascot-loop.gif` — fallback
+- `assets/mascot-frame-*.png` — individual frames
+
+All assets are local, so GitHub Pages can serve them directly.

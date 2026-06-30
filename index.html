@@ -94,6 +94,56 @@
       line-height:1.38;
       box-shadow:0 10px 26px rgba(47,111,115,.22);
     }
+
+    .mascot-card {
+      margin: 14px 2px 0;
+      background: rgba(255,255,255,.82);
+      border: 1px solid rgba(236,221,208,.95);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(84,51,31,.08);
+      backdrop-filter: blur(10px);
+    }
+    .mascot-art {
+      position: relative;
+      background: #fff8e9;
+      padding: 10px;
+    }
+    .mascot-art img {
+      width: 100%;
+      display: block;
+      border-radius: 22px;
+    }
+    .mascot-caption {
+      padding: 13px 15px 15px;
+      display: flex;
+      gap: 10px;
+      align-items: start;
+      justify-content: space-between;
+    }
+    .mascot-caption strong {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 4px;
+      letter-spacing: -.15px;
+    }
+    .mascot-caption span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+    .mascot-badge {
+      flex-shrink: 0;
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: #fff1df;
+      border: 1px solid #ead8c7;
+      color: #6b4d42;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
     .section-title {
       margin:24px 4px 12px;
       display:flex;
@@ -283,7 +333,7 @@
   <main class="phone">
     <section class="hero">
       <div class="hero-content">
-        <div class="pill">Fri · July 3 · In Jersey</div>
+        <div class="pill">Fri · July 3 · 07302 → Hoboken</div>
         <div>
           <h1>Cozy, playful, not walk-heavy</h1>
           <div class="subtitle">Cafe Alyce, archery, Otto Strada, then we pick the night vibe.</div>
@@ -294,6 +344,22 @@
     <div class="weather">
       Weather update: mostly sunny, but spiritually raining because it’s going to be way too hot 😌 Indoor, cozy, low-walking plan.
     </div>
+
+    <section class="mascot-card" aria-label="Mascot animation">
+      <div class="mascot-art">
+        <picture>
+          <source srcset="assets/mascot-loop.webp" type="image/webp">
+          <img src="assets/mascot-loop.gif" alt="Cute pig and banana mascots making a plan and picking a vibe">
+        </picture>
+      </div>
+      <div class="mascot-caption">
+        <div>
+          <strong>Less love, more plans.</strong>
+          <span>A tiny mascot moment: make the plan, then pick the vibe.</span>
+        </div>
+        <div class="mascot-badge">beta mascot</div>
+      </div>
+    </section>
 
     <div class="section-title">
       <h2>Main plan</h2>
